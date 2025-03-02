@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #Background {
+        background-image: url("./Background\ \(5\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: full;
+      }
+      #Background2 {
+        background-image: url("./Background\ \(3\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+    </style>
+    <title>7thaven</title>
+  </head>
+  <body class="questrial-regular overflow-x-hidden">
+    <!-- Navbar and Hero section -->
+
+    <!-- Mobile responsiveness -->
+    <div id="Background" class="xl:hidden m-3 overflow-hidden rounded-[20px]">
+      <nav class="md:flex md:items-center md:justify-between">
+        <div class="py-5 mx-6 flex justify-between items-center">
+          <span class="text-2xl flex flex-col font-[Poppins]">
+            <span href="#"
+              ><img
+                src="/Mobilelogo.png"
+                class="h-[16.442598342895508px] md:mt-10 w-[83.0999984741211px]"
+                alt=""
+            /></span>
+          </span>
+          <span class="text-[40px] cursor-pointer md:hidden">
+            <ion-icon
+              name="menu-outline"
+              class="text-white w-[39px] h-[20px]"
+              onclick="Menu(this)"
+            ></ion-icon>
+          </span>
+        </div>
+        <ul
+          class="md:flex md:items-center bg-[#242A56] md:bg-transparent md:mt-10 text-bold z-[1] md:z-auto md:static text-white w-full md:w-auto absolute left-0 md:py-0 py-4 md:pl-0 pl-5 md:opacity-100 opacity-0 t transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="./about.html" class="text-xl hover:text-cyan-500">About</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500">Services</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-xl hover:text-cyan-500">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mt-10">
+        <div class="text-white flex flex-col items-center gap-5">
+          <p class="text-[14px]">Welcome to 7thaven</p>
+          <h1 class="text-[25px] leading-[27.5px] flex text-center px-5">
+            Your Gateway to Seamless Payments, Technology Solution, Consultancy
+            and Reliable Liquidity
+          </h1>
+          <p class="text-[16px] flex text-center px-[60px]">
+            At 7thaven, we’re dedicated to revolutionizing the way businesses
+            manage their financial transactions and liquidity needs. With our
+            cutting-edge payment solutions, Technology Solution, Consultancy and
+            robust liquidity provision services, we empower businesses of all
+            sizes to thrive in today’s dynamic market landscape.
+          </p>
+        </div>
+        <div class="p-4 relative">
+          <img src="./Frame 12.png" class="p-10" alt="" />
+          <img
+            src="./Frame 11 (1).png"
+            class="absolute p-20 bottom-[50px] left-[40px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Mobile responsiveness -->
+
+    <div
+      id="Background2"
+      class="hidden overflow-hidden relative xl:flex flex-col rounded-[20px] m-8"
+    >
+      <img
+        src="./Vector (7).png"
+        class="absolute top-[-90px] left-[-260px]"
+        alt=""
+      />
+      <img src="./Vector (8).png" class="absolute right-[-10px]" alt="" />
+      <nav class="flex justify-between w-full p-7 px-[100px] mt-5">
+        <img
+          src="./Mdlogo.png"
+          class="h-[34.38637161254883px] w-[171.99819946289062px]"
+          alt=""
+        />
+        <ul class="text-white flex">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[20px] hover:text-cyan-500 duration-500"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="./about.html" class="text-[20px] hover:text-cyan-500"
+              >About</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[20px] hover:text-cyan-500">Services</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[20px] hover:text-cyan-500">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="flex flex-col gap-[120px] xl:gap-0 xl:flex-row md:justify-center lg:items-center mt-[80px]"
+      >
+        <div
+          class="text-white flex flex-col justify-center w-[517px] mr-[110px] gap-10"
+        >
+          <p class="text-[21.96px]">Welcome to 7thaven</p>
+          <h1 class="text-[43.23px] leading-[47.55px] flex">
+            Your Gateway to Seamless Payments, Technology Solution, Consultancy
+            and Reliable Liquidity
+          </h1>
+          <p class="text-[17.2px] leading-[18.92px] flex">
+            At 7thaven, we’re dedicated to revolutionizing the way businesses
+            manage their financial transactions and liquidity needs. With our
+            cutting-edge payment solutions, Technology Solution, Consultancy and
+            robust liquidity provision services, we empower businesses of all
+            sizes to thrive in today’s dynamic market landscape.
+          </p>
+        </div>
+        <div class="relative">
+          <img src="./Frame 12.png" class="w-[580px] h-[539px]" alt="" />
+          <img
+            src="./Frame 11 (1).png"
+            class="absolute lg:bottom-[140px] lg:left-[65px] lg:px-[70px] xl:bottom-[133px] xl:px-[60px] xl:left-[68px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navbar and Hero section -->
+    <div class="flex flex-col lg:justify-center lg:mt-20 mt-14 text-center">
+      <h1 class="text-[#010F12] text-[26.9px] font-normal">
+        How can we help you?​
+      </h1>
+      <p
+        class="text-[#5E6575] lg:text-[14.24px] items-center px-[90px] md:px-[200px] text-[10px] xl:px-[410px] leading-[16px] lg:leading-[22.78px]"
+      >
+        7thaven is dedicated to helping you achieve your financial goals with
+        tailored solutions, including streamlined payments, reliable liquidity
+        services, and expert risk management guidance. Contact our team to
+        discuss how we can support your success in today’s dynamic market.
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col gap-3 mt-8 px-[60px] md:grid-rows-[2] md:grid md:grid-cols-2 lg:grid-cols-3 xl:px-[220px]"
+    >
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(1).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Streamlined Payment Processing​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Simplify your payment processes with our advanced payment solutions,
+          ensuring seamless transactions for your customers and enhanced
+          efficiency for your business
+        </p>
+      </div>
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(2).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Access to Reliable Liquidity​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Gain access to reliable liquidity provision services, ensuring you
+          have the capital you need to fuel growth, seize opportunities, and
+          navigate financial challenges with confidence
+        </p>
+      </div>
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(3).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Enhanced Security Measures​​​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Rest assured with our state-of-the-art security measures, protecting
+          your transactions and data against threats and ensuring peace of mind
+          for you and your customers.
+        </p>
+      </div>
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(4).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Tailored Financial Services​​​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Benefit from our tailored financial services, designed to meet the
+          unique needs of your business and support your long-term financial
+          goals.
+        </p>
+      </div>
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(5).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Expert Guidance/Consultancy and Support​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Receive expert guidance and support from our dedicated team of
+          professionals, who are committed to providing personalized assistance
+          and helping you achieve success
+        </p>
+      </div>
+      <div
+        class="flex py-6 gap-3 p-6 rounded-xl justify-center flex-col border-[1px]"
+      >
+        <div class="flex gap-3 items-center justify-start">
+          <img src="./icon(6).png" class="w-[33.291297912597656px]" alt="" />
+          <p class="text-[14.26px] text-[#172342]">
+            Innovative Technology Solutions​
+          </p>
+        </div>
+        <p class="text-[10.7px] text-[#5E6575]">
+          Stay ahead of the curve with our innovative technology solutions,
+          leveraging the latest advancements to optimize your financial
+          operations and stay competitive in today’s market
+        </p>
+      </div>
+    </div>
+
+    <div class="my-10 bg-[#EFF2FF] py-14">
+      <div class="flex flex-col px-[20px] gap-5 lg:px-[410px] text-center">
+        <h1
+          class="text-[#010F12] text-[23px] lg:text-[26.9px] leading-[32.28px]"
+        >
+          Our customers
+        </h1>
+        <p
+          class="lg:text-[14.24px] text-[10px] leading-[16px] text-[#5E6575] lg:leading-[22.78px]"
+        >
+          Spanning various industries, our current clientele relies on 7thaven
+          for custom payment solutions and liquidity services. While client
+          confidentiality remains paramount, our dedication to outstanding
+          service is evident through enduring partnerships.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center lg:gap-10 lg:mt-14 mt-10 gap-5 px-9 gap-5"
+      >
+        <div class="flex flex-col lg:flex-row lg:gap-10 gap-5 items-center">
+          <div class="flex items-center gap-5">
+            <a href="">
+              <img
+                src="./Payaza.png"
+                class="h-[17.676738739013672px] lg:h-[32px]"
+                alt=""
+              />
+            </a>
+            <a href=""
+              ><img
+                src="./Starks.png"
+                class="h-[16.79290199279785px] lg:h-[30.399999618530273px]"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                src="./Flutterwave.png"
+                class="h-[23.421676635742188px] lg:h-[42.400001525878906px]"
+                alt=""
+            /></a>
+          </div>
+          <div class="flex items-center gap-5">
+            <a href=""
+              ><img
+                src="./Southone.png"
+                class="h-[17.234819412231445px] lg:h-[31.200000762939453px]"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                src="./Rove.png"
+                class="h-[8.838369369506836px] lg:h-[16px]"
+                alt=""
+            /></a>
+            <a href=""
+              ><img
+                src="./Verto.png"
+                class="h-[11.047961235046387px] lg:h-[20px]"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href=""
+            ><img
+              src="./Obsidian.png"
+              class="h-[8.531900405883789px] lg:h-[16.570667266845703px]"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="./SCL.png"
+              class="h-[24.30232048034668px] lg:h-[47.20000076293945px]"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="./"
+              class="h-[11.693578720092773px] lg:h-[22.711284637451172px]"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="p-6 px-10 overflow-hidden questrial-regular">
+      <div class="flex justify-between items-center">
+        <p class="text-[20px] text-extrabold">
+          <span
+            href="#"
+            class="flex z-[50] font-bold bg-white items-center rounded-3xl cursor-pointer"
+            ><img src="./footerlogo.png" class="h-[20px]" alt=""
+          /></span>
+        </p>
+        <div class="flex h-6 flex items-center gap-2">
+          <a href="https://www.instagram.com/7thavenglobal?utm_source=qr&igsh=MWMydzdldndwcDk0Yg=="><img class="h-6" src="./Link - Instagram.png" alt="" /></a>
+          <a href="https://x.com/7thavenGlobal?t=P-1jvvwKmrqo2IfzirKC3w&s=09"><img class="h-4" src="./Group (4).png" alt="" /></a>
+          <a href="https://www.linkedin.com/company/7thaven/"><img class="h-4" src="./Vector (7) 2.png" alt="" /></a>
+        </div>
+      </div>
+      <img
+        src="./Divider line.png"
+        class="w-full mt-4 text-white h-[0.5px]"
+        alt=""
+      />
+      <div
+        class="flex md:flex-row flex-col md:gap-0 gap-6 justify-between mt-4"
+      >
+        <div class="flex justify-between gap-10">
+          <div class="flex flex-col gap-2">
+            <h1 class="font-black text-[16px] text-[#000000]">Legal</h1>
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Term of service</a
+            >
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Complaints Management Policy</a
+            >
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Privacy Policy</a
+            >
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1 class="font-black text-[16px] text-[#000000]">Business</h1>
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Payment solution</a
+            >
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Liquidity provision</a
+            >
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Financial services</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="font-black text-[16px] text-[#000000]">Reach out to us</h1>
+          <a href="" class="font-light text-[12px] text-[#71717A]"
+            >Support@7thaven</a
+          >
+        </div>
+      </div>
+      <img
+        src="./Divider line.png"
+        class="w-full mt-4 text-white h-[0.5px]"
+        alt=""
+      />
+      <p class="text-[10.51px] text-[#1D1F13] mt-4 text-[#71717A]">
+        Copyright © 2025 7th haven | Powered by 7th haven
+      </p>
+    </footer>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
