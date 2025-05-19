@@ -55,8 +55,8 @@
           <span class="text-2xl flex flex-col font-[Poppins]">
             <span href="#"
               ><img
-                src="/Mobilelogo.png"
-                class="h-[16.442598342895508px] md:mt-10 w-[83.0999984741211px]"
+                src="./WONI GLOBAL.png"
+                class="h-[26.442598342895508px] md:mt-10 w-[73.0999984741211px]"
                 alt=""
             /></span>
           </span>
@@ -89,13 +89,13 @@
       </nav>
       <div class="mt-10">
         <div class="text-white flex flex-col items-center gap-5">
-          <p class="text-[14px]">Welcome to 7thaven</p>
+          <p class="text-[14px]">Welcome to Woni-Global</p>
           <h1 class="text-[25px] leading-[27.5px] flex text-center px-5">
             Your Gateway to Seamless Payments, Technology Solution, Consultancy
             and Reliable Liquidity
           </h1>
           <p class="text-[16px] flex text-center px-[60px]">
-            At 7thaven, we’re dedicated to revolutionizing the way businesses
+            At Woni-Global, we’re dedicated to revolutionizing the way businesses
             manage their financial transactions and liquidity needs. With our
             cutting-edge payment solutions, Technology Solution, Consultancy and
             robust liquidity provision services, we empower businesses of all
@@ -126,8 +126,8 @@
       <img src="./Vector (8).png" class="absolute right-[-10px]" alt="" />
       <nav class="flex justify-between w-full p-7 px-[100px] mt-5">
         <img
-          src="./Mdlogo.png"
-          class="h-[34.38637161254883px] w-[171.99819946289062px]"
+          src="./WONI GLOBAL.png"
+          class="h-[34.38637161254883px] w-[111.99819946289062px]"
           alt=""
         />
         <ul class="text-white flex">
@@ -155,13 +155,13 @@
         <div
           class="text-white flex flex-col justify-center w-[517px] mr-[110px] gap-10"
         >
-          <p class="text-[21.96px]">Welcome to 7thaven</p>
+          <p class="text-[21.96px]">Welcome to Woni-Global</p>
           <h1 class="text-[43.23px] leading-[47.55px] flex">
             Your Gateway to Seamless Payments, Technology Solution, Consultancy
             and Reliable Liquidity
           </h1>
           <p class="text-[17.2px] leading-[18.92px] flex">
-            At 7thaven, we’re dedicated to revolutionizing the way businesses
+            At Woni-Global, we’re dedicated to revolutionizing the way businesses
             manage their financial transactions and liquidity needs. With our
             cutting-edge payment solutions, Technology Solution, Consultancy and
             robust liquidity provision services, we empower businesses of all
@@ -187,7 +187,7 @@
       <p
         class="text-[#5E6575] lg:text-[14.24px] items-center px-[90px] md:px-[200px] text-[10px] xl:px-[410px] leading-[16px] lg:leading-[22.78px]"
       >
-        7thaven is dedicated to helping you achieve your financial goals with
+        Woni-Global is dedicated to helping you achieve your financial goals with
         tailored solutions, including streamlined payments, reliable liquidity
         services, and expert risk management guidance. Contact our team to
         discuss how we can support your success in today’s dynamic market.
@@ -299,7 +299,7 @@
         <p
           class="lg:text-[14.24px] text-[10px] leading-[16px] text-[#5E6575] lg:leading-[22.78px]"
         >
-          Spanning various industries, our current clientele relies on 7thaven
+          Spanning various industries, our current clientele relies on Woni-Global
           for custom payment solutions and liquidity services. While client
           confidentiality remains paramount, our dedication to outstanding
           service is evident through enduring partnerships.
@@ -380,7 +380,7 @@
           <span
             href="#"
             class="flex z-[50] font-bold bg-white items-center rounded-3xl cursor-pointer"
-            ><img src="./footerlogo.png" class="h-[20px]" alt=""
+            ><img src="" class="h-[20px]" alt=""
           /></span>
         </p>
         <div class="flex h-6 flex items-center gap-2">
@@ -426,7 +426,7 @@
         <div class="flex flex-col gap-2">
           <h1 class="font-black text-[16px] text-[#000000]">Reach out to us</h1>
           <a href="" class="font-light text-[12px] text-[#71717A]"
-            >Support@7thaven</a
+            >Support@woniglobal</a
           >
         </div>
       </div>
@@ -436,21 +436,23 @@
         alt=""
       />
       <p class="text-[10.51px] text-[#1D1F13] mt-4 text-[#71717A]">
-        Copyright © 2025 7th haven | Powered by 7th haven
+        Copyright © 2025 Woni-Global | Powered by Woni-Global
       </p>
     </footer>
 
     <script>
-      function Menu(e) {
-        let list = document.querySelector("ul");
-        e.name === "menu"
-          ? ((e.name = "close"),
-            list.classList.add("top-[80px]"),
-            list.classList.add("opacity-100"))
-          : ((e.name = "menu"),
-            list.classList.remove("top-[80px]"),
-            list.classList.remove("opacity-100"));
+      function Menu(icon) {
+          let menu = document.querySelector("nav ul");
+      
+          // Toggle both opacity and visibility correctly
+          if (menu.classList.contains("opacity-0")) {
+              menu.classList.remove("opacity-0", "hidden");
+              menu.classList.add("opacity-100");
+          } else {
+              menu.classList.add("opacity-0");
+              setTimeout(() => menu.classList.add("hidden"), 300); // Delay hiding for smooth transition
+          }
       }
-    </script>
+      </script>
   </body>
 </html>
